@@ -8,6 +8,10 @@ import Cart from './Components/Pages/Cart.jsx';
 import LoginSignup from './Components/Pages/LoginSignup.jsx';
 import Product from './Components/Pages/Product.jsx';
 import Footer from './Components/Footer/Footer.jsx';
+import men_banner from './Components/Assets/banner_mens.png';
+import women_banner from './Components/Assets/banner_women.png';
+import kid_banner from './Components/Assets/banner_kids.png';
+ 
 
 
 function App() {
@@ -18,10 +22,12 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path='/' element={<Shop/>}></Route>
-          <Route path='/mens' element={<ShopCategorey categorey="men"/>}></Route>
-          <Route path='/womens' element={<ShopCategorey categorey="women"/>}></Route>
-          <Route path='/kids' element={<ShopCategorey categorey="kid"/>}></Route>
-          <Route path='/product' element={<Product/>}></Route>
+          <Route path='/mens' element={<ShopCategorey banner={men_banner} category="men"/>}></Route>
+          <Route path='/womens' element={<ShopCategorey banner={women_banner}  category="women"/>}></Route>
+          <Route path='/kids' element={<ShopCategorey banner={kid_banner}  category="kid"/>}></Route>
+          <Route path='/product' element={<Product/>}>
+            <Route path=':productId' element={<Product/>}/>
+          </Route>
           <Route path='/cart' element={<Cart/>}></Route>
           <Route path='/login' element={<LoginSignup/>}></Route>
         </Routes>
@@ -35,3 +41,8 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
