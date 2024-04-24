@@ -45,11 +45,11 @@ margin: 0px 170px;
     font-size: 24px;
     font-weight: 700;
 }
-.productdisplay-right-oldprices{
+.productdisplay-right-oldprice{
     color: #818181;
     text-decoration: line-through;
 }
-.productdisplay-right-newprices{
+.productdisplay-right-newprice{
     color: #ff4141;
 }
 .productdisplay-right-size h1{
@@ -69,4 +69,22 @@ margin: 0px 170px;
     border: 1pc solid #ebebeb;
     border-radius: 3px;
     cursor: pointer;
+}
+.productdisplay-right button{
+    padding: 20px 40px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: azure;
+    background-color: #d60c0c;
+    margin-bottom: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.productdisplay-right-category{
+    margin: 10px;
+}
+.productdisplay-right-category span{
+    font-weight: 600;
 }
