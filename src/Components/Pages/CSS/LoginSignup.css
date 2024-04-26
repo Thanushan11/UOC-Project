@@ -62,3 +62,69 @@
     font-size: 18px;
     font-weight: 500;
 }
+@media(max-width:1280px){
+    .loginsignup{
+        padding:auto;
+        margin: auto;
+    }
+    .loginsignup-container{
+        width: auto;
+        max-width: 500px;
+        max-height: 700px;
+
+    }
+    .loginsignup-container h1{
+        margin: 10px 0px;
+    }
+    .loginsignup-fields{
+        gap: 20px;
+        margin-top: 20px;
+
+    }
+    .loginsignup-fields input{
+        height: 65px;
+        width: 93%;
+    }
+    .loginsignup-container button{
+        width: 100%;
+    }
+    .loginsignup-login{
+        font-size: 16px;
+    }
+    .loginsignup-agree{
+        font-size: 14px;
+        gap: 10px;
+    }
+}
+
+@media(max-width:800px){
+    .loginsignup{
+        padding: auto;
+        margin: auto;
+        width: 90%;
+
+    }
+  
+    .loginsignup-container h1{
+        font-size: 24px;
+    }
+    .loginsignup-fields{
+        margin-top: 20px;
+
+    }
+    .loginsignup-fields input{
+        height: 50px;
+    
+    }
+    .loginsignup-container button{
+        height: 50px;
+        font-size: 16px;
+    }
+}
+@media(max-width:600px){
+    .loginsignup{
+        padding: 30px;
+        width: 90%;
+
+    }
+}
